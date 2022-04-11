@@ -4,6 +4,27 @@ import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import ProfileImg from '../../assets/images/about-img.png';
 
+const blogPosts = [
+  {
+    id: 1,
+    skill: 'Node.js',
+    title: '서버 구동',
+    content: '노드는 자바스크립트 런타임입니다. 노드를 통해 자바스크립트로 ...'
+  },
+  {
+    id: 2,
+    skill: 'Next.js',
+    title: 'Redux',
+    content: 'Next에서 Redux를 붙이려면 꽤나 복잡한 과정을 거쳐야 합니다. 이 복잡한 ...'
+  },
+  {
+    id: 3,
+    skill: 'React',
+    title: ' 커스텀 훅',
+    content: '회원가입 폼이나 로그인 폼을 작성할 때 중복이 되는 부분을 hook을 통해 커스텀 ...'
+  }
+]
+
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
@@ -27,6 +48,20 @@ const About = () => {
           <p>
           노력은 책임감에서 나온다고 생각합니다. 나에게 주어진 업무, 내가 해내야 하는 일들은 꼭 해내겠다는 책임감과 일념이 강한 사람은 피곤함을 느끼지 않고 노력할 수 있다고 생각합니다. 퍼블리셔로 재직할 당시 무리한 개발 일정 속에서도 근본적인 개발을 지연시키는 원인을 찾고, 꼭 필요하지 않은 기능들을 기획 측과 협의해서 줄여나가는 등 일정 내 개발을 완수하여 회사에 손해가 발생하는 일을 막은 경험이 있습니다.          
           </p>
+
+          <div class="blog-zone">
+            <h2>
+              <AnimatedLetters letterClass={letterClass} strArray={['R', 'e', 'c', 'e', 'n', 't', ' ', 'p', 'o', 's', 't']} idx={18} />
+            </h2>
+
+            {blogPosts.map((b, i) => (
+              <div key={b.id} className="blog-post">
+                <h3>{b.skill}</h3>
+                <h4>{b.title}</h4>
+                <p>{b.content}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="profileImg">
