@@ -43,7 +43,7 @@ const Project = () => {
         <div className='project-zone'>
           {projectData.map((n, i) => (
             <motion.div onClick={() => onBoxClick(n.id)} key={n.id} layoutId={n.id}>
-
+              <img src={n.imgSrc} alt={n.title} />
             </motion.div>
           ))}
         </div>
@@ -62,6 +62,20 @@ const Project = () => {
             <motion.div className='project-content' layoutId={projectMatch.params.id}>
               <h2>{clickdProject.title}</h2>
               <p>{clickdProject.content}</p>
+              <div className='projectImg'>
+                <img src={clickdProject.imgSrc} alt={clickdProject.title} />
+              </div>
+              <ul>
+                {clickdProject.skills.map((s, i) => (
+                  <li key={i}>{s}</li>
+                ))}
+              </ul>
+              <div className="link">
+                URL: <a href={clickdProject.url} target="_blank">{clickdProject.url}</a>
+              </div>
+              <div className="link">
+                GitHub: <a href={clickdProject.github} target="_blank">{clickdProject.github}</a>
+              </div>
             </motion.div>
           </>
         ) : null}

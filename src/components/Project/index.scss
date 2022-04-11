@@ -15,7 +15,22 @@
     height: 300px;
     background: rgba(0, 0, 0, 0.5);
     margin-right: 25px;
-  } 
+    cursor: pointer;
+    overflow: hidden;
+
+    img {
+      width: 680px;
+      margin-left: -155px;
+      text-align: center;
+      opacity: 0.3;
+    }
+
+    &:hover {
+      img {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .overlay {
@@ -35,7 +50,7 @@
 
 .project-content {
   width: 700px;
-  height: 800px;
+  height: 700px;
   background: #212529;
   position: absolute;
   left: 0;
@@ -44,7 +59,52 @@
   top: 0;
   bottom: 0;
   z-index: 100;
-  padding: 20px;
+  padding: 20px 35px;
   box-sizing: border-box;
   color: #fff;
+  border-radius: 7px;
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .projectImg {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    } 
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 20px 0 30px;
+
+    li {
+      margin-right: 20px;
+      border: 1px solid #fff;
+      padding: 3px 15px;
+      font-size: 14px;
+      border-radius: 25px;
+    }
+  }
+
+  .link {
+    font-size: 16px;
+    margin-top: 20px;
+
+    a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
 }
