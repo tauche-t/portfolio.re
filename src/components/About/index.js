@@ -9,19 +9,22 @@ const blogPosts = [
     id: 1,
     skill: 'Node.js',
     title: '서버 구동',
-    content: '노드는 자바스크립트 런타임입니다. 노드를 통해 자바스크립트로 ...'
+    content: '노드는 자바스크립트 런타임입니다. 노드를 통해 자바스크립트로 ...',
+    src: 'https://velog.io/@keyjinnam/Node.js-%EC%84%9C%EB%B2%84-%EA%B5%AC%EB%8F%99',
   },
   {
     id: 2,
     skill: 'Next.js',
     title: 'Redux',
-    content: 'Next에서 Redux를 붙이려면 꽤나 복잡한 과정을 거쳐야 합니다. 이 복잡한 ...'
+    content: 'Next에서 Redux를 붙이려면 꽤나 복잡한 과정을 거쳐야 합니다. 이 복잡한 ...',
+    src: 'https://velog.io/@keyjinnam/Next.js-Redux',
   },
   {
     id: 3,
     skill: 'React',
     title: ' 커스텀 훅',
-    content: '회원가입 폼이나 로그인 폼을 작성할 때 중복이 되는 부분을 hook을 통해 커스텀 ...'
+    content: '회원가입 폼이나 로그인 폼을 작성할 때 중복이 되는 부분을 hook을 통해 커스텀 ...',
+    src: 'https://velog.io/@keyjinnam/React-%EC%BB%A4%EC%8A%A4%ED%85%80-%ED%9B%85',
   }
 ]
 
@@ -54,13 +57,17 @@ const About = () => {
               <AnimatedLetters letterClass={letterClass} strArray={['R', 'e', 'c', 'e', 'n', 't', ' ', 'p', 'o', 's', 't']} idx={18} />
             </h2>
 
-            {blogPosts.map((b, i) => (
-              <div key={b.id} className="blog-post">
-                <h3>{b.skill}</h3>
-                <h4>{b.title}</h4>
-                <p>{b.content}</p>
-              </div>
-            ))}
+            <ul className="blog-post">
+              {blogPosts.map((b, i) => (
+                <a  href={b.src} target="_blank">
+                  <li key={b.id}>
+                    <h3>{b.skill}</h3>
+                    <h4>{b.title}</h4>
+                    <p>{b.content}</p>
+                  </li>
+                </a>
+              ))}
+            </ul>
           </div>
         </div>
 

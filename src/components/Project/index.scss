@@ -17,6 +17,8 @@
     margin-right: 25px;
     cursor: pointer;
     overflow: hidden;
+    animation: flipInY 1s;
+    animation-delay: 1s;
 
     img {
       width: 680px;

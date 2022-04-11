@@ -70,6 +70,7 @@ const Contact = () => {
           <br />
           사임당로 835-4
           <br />
+          <span>010 - 2834 - 3245</span>
           <span>tauche.t3473@gmail.com</span>
         </div>
         <div className='map-wrap'>

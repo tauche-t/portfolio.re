@@ -1,3 +1,103 @@
+.about-page {
+  top: 7%;
+}
+
+.blog-zone {
+  margin-top: 100px;
+
+  h2 {
+    font-family: "Coolvetica";
+    color: #ffd700;
+    font-weight: 400;
+    font-size: 36px;
+    position: relative;
+    left: 10px;
+    margin-bottom: 50px;
+
+    &::before {
+      content: '<h2>';
+      font-family: 'La belle Aurore';
+      font-size: 18px;
+      position: absolute;
+      margin-top: -10px;
+      left: -10px;
+      opacity: 0.6;
+      line-height: 18px;
+    }
+
+    &::after {
+      content: '</h2>';
+      font-family: 'La belle Aurore';
+      font-size: 18px;
+      line-height: 18px;
+      position: absolute;
+      left: -30px;
+      bottom: -20px;
+      margin-left: 20px;
+      opacity: 0.6;
+    }
+  }
+
+  .blog-post {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+    a {
+      li {
+        background: #212529;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-right: 20px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        h4 {
+          font-size: 14px;
+        }
+
+        p {
+          font-size: 12px;
+          opacity: 0.8;
+        }
+      }
+      &:nth-child(1) {
+        li {
+          border-top: 1px solid #51cf66;
+
+          h3 {
+            color: #51cf66;
+          }
+        }
+      }
+      &:nth-child(2) {
+        li {
+          border-top: 1px solid #ff6b6b;
+
+          h3 {
+            color: #ff6b6b;
+          }
+        }
+      }
+      &:nth-child(3) {
+        li {
+          border-top: 1px solid #3bc9db;
+
+          h3 {
+            color: #3bc9db;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 .profileImg {
   width: 340px;
   height: 509px;
