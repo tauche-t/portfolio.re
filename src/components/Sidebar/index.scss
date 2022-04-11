@@ -73,6 +73,12 @@
       }
     }
 
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
     a.skills-link {
       &:after {
         content: 'SKILLS';

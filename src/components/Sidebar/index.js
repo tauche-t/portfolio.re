@@ -5,6 +5,7 @@ import { AiOutlineHome, AiOutlineMail } from 'react-icons/ai';
 import { FiTool } from 'react-icons/fi';
 import { AiFillGithub } from 'react-icons/ai';
 import { SiBloglovin } from 'react-icons/si';
+import { BsPerson } from 'react-icons/bs';
 
 const Sidebar = () => {
   return (
@@ -15,6 +16,9 @@ const Sidebar = () => {
       <nav>
         <NavLink exact="true" activeclassname="active" to="/">
           <AiOutlineHome />
+        </NavLink>
+        <NavLink activeclassname="active" className="about-link" to="/about">
+          <BsPerson />
         </NavLink>
         <NavLink activeclassname="active" className="skills-link" to="/skills">
           <FiTool />
