@@ -23,11 +23,35 @@ const Skills = () => {
           <h1>
             <AnimatedLetters letterClass={letterClass} strArray={['M', 'y', ' ', 'S', 'k', 'i', 'l', 'l', 's']} idx={15} />
           </h1>
-          <p>
-            I'm very ambitious front-end developer looking for a role in
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
-          </p>
+          <div className="skills-zone">
+            <h2>Front-end Skill</h2>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Redux</li>
+              <li>ReduxSaga</li>
+              <li>Recoil</li>
+              <li>JQuery</li>
+            </ul>
+          </div>
+          <div className="skills-zone">
+            <h2>Back-end Skill</h2>
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+            </ul>
+          </div>
+          <div className="skills-zone">
+            <h2>Tool</h2>
+            <ul>
+              <li>Git/GitHub</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+            </ul>
+          </div>
         </div>
 
         <div className='stage-cube'>

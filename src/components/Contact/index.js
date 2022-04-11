@@ -36,9 +36,8 @@ const Contact = () => {
             <AnimatedLetters letterClass={letterClass} strArray={['C', 'o', 'n', 't', 'a', 'c', ' ', 'm', 'e']} idx={15} />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            궁금한 점이 있으시거나, 저에 대해 더 알아보고 싶으신 분들은 편하게 연락 주세요~ <br />
+            최대한 빠르게 답장해 드리겠습니다!
           </p>
           <div className='contact-form'>
             <form ref={refForm} onSubmit={sendEmail}>
