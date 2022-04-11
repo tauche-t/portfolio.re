@@ -71,10 +71,10 @@ const Project = () => {
                 ))}
               </ul>
               <div className="link">
-                URL: <a href={clickdProject.url} target="_blank">{clickdProject.url}</a>
+                URL: <a href={clickdProject.url} target="_blank" rel="noreferror">{clickdProject.url}</a>
               </div>
               <div className="link">
-                GitHub: <a href={clickdProject.github} target="_blank">{clickdProject.github}</a>
+                GitHub: <a href={clickdProject.github} target="_blank" rel="noreferror">{clickdProject.github}</a>
               </div>
             </motion.div>
           </>

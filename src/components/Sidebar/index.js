@@ -33,12 +33,12 @@ const Sidebar = () => {
 
       <ul>
         <li>
-          <a target="_blank" rel="noreferror" href="#">
+          <a target="_blank" rel="noreferror" href="https://github.com/tauche-t">
             <AiFillGithub />
           </a>
         </li>
         <li>
-          <a target="_blank" rel="noreferror" href="#">
+          <a target="_blank" rel="noreferror" href="https://velog.io/@keyjinnam">
             <SiBloglovin />
           </a>
         </li>

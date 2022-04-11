@@ -59,7 +59,7 @@ const About = () => {
 
             <ul className="blog-post">
               {blogPosts.map((b, i) => (
-                <a  href={b.src} target="_blank">
+                <a href={b.src} target="_blank" rel="noreferror">
                   <li key={b.id}>
                     <h3>{b.skill}</h3>
                     <h4>{b.title}</h4>
