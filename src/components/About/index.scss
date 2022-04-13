@@ -1,6 +1,10 @@
 .about-page {
   top: 7%;
 
+  @media screen and (max-width: 1380px) {
+    top: 9%;
+  }
+
   .text-zone {
 
     @media screen and (min-width: 1151px) and (max-width: 1500px) {
@@ -20,6 +24,10 @@
 
 .blog-zone {
   margin-top: 100px;
+
+  @media screen and (max-width: 1380px) {
+    margin-top: 50px;
+  }
 
   h2 {
     font-family: "Coolvetica";
