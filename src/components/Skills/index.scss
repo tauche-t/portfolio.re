@@ -1,9 +1,26 @@
 .skills-page {
   top: 7%;
+
+  .text-zone {
+    width: 40%;
+
+    @media screen and (max-width: 780px) {
+      width: 80%;
+      left: 17%;
+    }
+  }
 }
 
 .skills-zone {
   margin-bottom: 35px;
+
+  &:nth-child(2) {
+    margin-bottom: 20px;
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
 
   h2 {
     color: #fff;
@@ -17,6 +34,7 @@
     list-style: none;
     display: flex;
     padding: 0;
+    flex-wrap: wrap;
 
     li {
       // margin: 0 10px;
@@ -88,6 +106,10 @@
   position: absolute;
   right: 0;
   overflow: hidden;
+
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
 }
 
 .cubespinner {

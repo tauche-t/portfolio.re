@@ -1,6 +1,10 @@
 .project-page {
   .text-zone {
     top: 30%;
+
+    @media screen and (max-width: 1361px) {
+      left: 15%;
+    }
   }
 }
 
@@ -9,6 +13,18 @@
   position: absolute;
   left: 10%;
   top: 45%;
+  width: 85%;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 781px) and (max-width: 1361px) {
+    width: 70%;
+    left: 28%;
+    top: 35%;
+  }
+  @media screen and (max-width: 780px) {
+    top: 40%;
+    left: 25%;
+  }
 
   div {
     width: 300px;
@@ -19,10 +35,21 @@
     overflow: hidden;
     animation: flipInY 1s;
     animation-delay: 1s;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 781px) and (max-width: 1540px) {
+      width: 250px;
+      height: 250px;
+    }
+    @media screen and (max-width: 780px) {
+      width: 200px;
+      height: 200px;
+    }
 
     img {
       width: 680px;
-      margin-left: -155px;
+      // margin-left: -155px;
+      margin-left: -7px;
       text-align: center;
       opacity: 0.3;
     }
@@ -52,7 +79,7 @@
 
 .project-content {
   width: 700px;
-  height: 700px;
+  height: 730px;
   background: #212529;
   position: absolute;
   left: 0;
@@ -90,9 +117,11 @@
     padding: 0;
     display: flex;
     margin: 20px 0 30px;
+    flex-wrap: wrap;
 
     li {
       margin-right: 20px;
+      margin-top: 10px;
       border: 1px solid #fff;
       padding: 3px 15px;
       font-size: 14px;

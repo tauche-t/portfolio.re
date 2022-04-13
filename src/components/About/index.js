@@ -34,7 +34,7 @@ const About = () => {
   useEffect(() => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover');
-    }, 3000);
+    }, 4000);
   }, []);
 
   return (
@@ -54,7 +54,7 @@ const About = () => {
 
           <div class="blog-zone">
             <h2>
-              <AnimatedLetters letterClass={letterClass} strArray={['R', 'e', 'c', 'e', 'n', 't', ' ', 'p', 'o', 's', 't']} idx={18} />
+              <AnimatedLetters letterClass={letterClass} strArray={['R', 'e', 'c', 'e', 'n', 't', ' ', 'p', 'o', 's', 't']} idx={22} />
             </h2>
 
             <ul className="blog-post">
@@ -75,7 +75,7 @@ const About = () => {
           <img src={ProfileImg} alt={ProfileImg} />
           <span className="subTitle">Frontend Developer</span>
           <div className="profile-text">
-            <AnimatedLetters letterClass={letterClass} strArray={['J', 'u', 'n', '-', 'm', 'o']} idx={15} />
+            <AnimatedLetters letterClass={letterClass} strArray={['J', 'u', 'n', '-', 'm', 'o']} idx={22} />
           </div>
           <div className='profile-line'>
             <span></span>

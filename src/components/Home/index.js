@@ -32,7 +32,10 @@ const Home = () => {
             <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={22} />
           </h1>
           <h2>Frontend Developer / JavaScript Expert / React Developer</h2>
-          <a className='flat-button' target="_blank" rel="noreferror" href="#">RESUME</a>
+          <a className='flat-button' target="_blank" rel="noreferror" href="https://periodic-cup-8bf.notion.site/JUNMO-9951e7d4bcf8429f9ad435a5c2de3dc3">
+            <em></em>
+            <span>RESUME</span>
+          </a>
         </div>
 
         <Logo />
